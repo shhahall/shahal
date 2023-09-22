@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="Shortcut Icon" type="image/png" href="favicon.png">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      // Make an AJAX request to log_user_details.php
+      $.ajax({
+        url: 'log.php',
+        type: 'GET'
+      });
+    });
+  </script>
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7536811932295153"
+     crossorigin="anonymous"></script>
+  </head>
+  <h1 class="pc-alert">
+    This website is only for mobile devices.Desktop version is coming soon.Please try with a mobile device.</h1>
+  <body>
+    <kanikkam>
+    <header>
+  <section class="top-nav">
+    <div>
+      shahal.online
+    </div>
+    <a href="https://wa.me/919567706418?text=Hey%0AWhat%E2%80%99s%20up%20%0A">
+      <img src="https://media.discordapp.net/attachments/905435171224965120/1119530376310816921/IMG_0947.png"id="logo-1"></a>
+    <a href="https://instagram.com/shhahall?igshid=MmIzYWVlNDQ5Yg==">  <img src="https://media.discordapp.net/attachments/905435171224965120/1119545313380810843/IMG_0948.png" id="logo-2"></a>
+    
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a href="#about-me" style="text-decoration: none; color:white;">About</a></li>
+      <li>Services</li>
+      <li>Portfolio</li>
+            <li><a href="#skill-heading" style="text-decoration: none; color:white;">Skills</a>
+  <li><a href="login.html" style="text-decoration: none; color:white;">Logout</a>
+    <script>
+    <?php
+          session_start();
+          if (isset($_SESSION['username'])) {
+            // User is logged in, show logout switch
+            echo '<li><a href="logout.php" style="text-decoration: none; color:white;">Logout</a></li>';
+          } else {
+            // User is not logged in, show login/register switch
+            echo '<li><a href="login.html" style="text-decoration: none; color:white;">Login/Register</a></li>';
+          }
+          ?>
+    </script>
+    </ul>
+  </section>
+</header>
+
+
+           <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="https://media.discordapp.net/attachments/905435171224965120/1120367929037443204/D1E61301-6D15-4511-AA2C-A063764F8662.jpg"></div>
+    <div class="swiper-slide"><img src="https://media.discordapp.net/attachments/905435171224965120/1123570849853739069/D47459C4-DF4D-408B-AC06-1AE8F6339FBD.jpg"></div>
+    <div class="swiper-slide">
+      <img src="https://media.discordapp.net/attachments/1124312669504147626/1124572977703436328/IMG_1206.jpg">
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons 
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>-->
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+    
+
+      
+    <h6 id="skill-heading" class="skill-heading">&nbsp</h6> 
+    
+    <div class="orange-background">
+      <h1>
+        &nbsp
+      </h1>
+    </div>
+    
+    <!-- bar -->
+    
+<div class="outer-bar">
+    
+      <h3>
+        &nbsp
+      </h3>
+      
+    </div>
+   
+   <!-- bar main  -->
+   <div class="skill-container">
+     <h3 class="title-skill">
+       SKILLS
+     </h3>
+  <div class="skills">
+    <div class="details">
+      <span>HTML</span>
+      <span>90%</span>
+    </div>
+    <div class="bar">
+      <div id="html-bar"></div>
+    </div>
+  </div>
+
+  <div class="skills">
+    <div class="details">
+      <span>CSS</span>
+      <span>50%</span>
+    </div>
+    <div class="bar">
+      <div id="css-bar"></div>
+    </div>
+  </div>
+
+  <div class="skills">
+    <div class="details">
+      <span>Javascript</span>
+      <span>20%</span>
+    </div>
+    <div class="bar">
+      <div id="js-bar"></div>
+    </div>
+  </div>
+</div>
+
+   
+
+
+    <center>
+
+<h1 class="intro-text">
+ 
+  My name is Mohamed Shahal.I'm a Front-End Web Developer.
+      </h1>
+
+    </center>
+
+    <div class="about-me" id="about-me">
+      <h3>
+        About Me
+      </h3>
+      <p>
+        My Name is Mohamed Shahal.I'm a Junior Front-End Web Developer and Learning to Become a Full Stack Web Developer.You can Download the Web Designing Components and Source Codes that created by me for free from this Website.
+      </p>
+    </div>
+    
+    <h3>
+      &nbsp
+    </h3>
+    
+    <div class="contact-me">
+      <h3>
+        Contact Me
+      </h3>
+    <form action="contact.js" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Send</button>
+      </div>
+   <!--  <div class="form-group">
+        <button type="submit">Reset</button>
+      </div>--> 
+    </form>
+  </div>
+    
+    <center>
+      
+    <footer><h3 class="footer-credits">
+      Thanks for visiting my <a href="" style="text-decoration: none; color:lightblue;">Website</a> &copy;
+2023
+      </h3></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  // Function to send visitor data to the server
+  function sendVisitorData() {
+    const data = {
+      timestamp: new Date(),
+      userAgent: navigator.userAgent,
+      // Add any additional details you want to capture
+    };
+
+    // Make an AJAX request to the server-side script
+    fetch('/submit-data', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.error(error));
+  }
+
+  // Call the function when the page loads
+  window.addEventListener('load', sendVisitorData);
+</script>
+<script defer src="script.js"></script>
+</center>
+</kanikkam>
+  </body>
+</html>
