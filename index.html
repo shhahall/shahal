@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <meta charset="utf-8">
+
+    <!--<link rel="stylesheet" href="style.css"/>-->
+    <script defer src="shahal.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shahal.css">
+      <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <h1 class="heading">
+     shahal.online
+    </h1>
+    <div class="social-logo">
+      <a href="https://wa.me/9567706418?text=Hello%2CI%20would%20like%20to%20know%20about%20your%20services."><img src="https://media.discordapp.net/attachments/905435171224965120/1169559911835910164/New_Project_17.png?ex=6555d88c&is=6543638c&hm=3ae557ef2b2c9d9ffeb0b0e6b595237a1300ef94a10a195694f468192e4bfa8d&"></a>
+      <a href="https://instagram.com/shhahall?igshid=OGQ5ZDc2ODk2ZA=="><img src="https://media.discordapp.net/attachments/905435171224965120/1169559912259518535/New_Project_17.png?ex=6555d88c&is=6543638c&hm=7287fa20529b5d619cce53c5e13c12643df42d2e7b76b085cae39fb80ee0f57f&"></a>
+      <a href="https://www.linkedin.com/in/mohamed-shahal-11432027b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="https://media.discordapp.net/attachments/905435171224965120/1169559911391309855/New_Project_17.png?ex=6555d88c&is=6543638c&hm=0d7ea73247912db08b4248cd986b999b1c0caf1c0ee799da1e04110163babe39&"></a>
+    </div>
+    <div class="intro-text">
+      
+    
+    <p id="text">
+
+      </p><span id="cursor"></span></div>
+    <script >
+
+document.addEventListener('DOMContentLoaded', function() {
+  const textElement = document.getElementById('text');
+  const text = "      Hey,my name is mohamed shahal.I'm a front-end web developer.My recent projects are given below in this website.Once again thanks for visiting my website.";
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      textElement.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 10); // Adjust the delay for typing speed
+    }
+  }
+
+  type();
+});
+
+</script>
+    <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="https://media.discordapp.net/attachments/905435171224965120/1120367929037443204/D1E61301-6D15-4511-AA2C-A063764F8662.jpg"></div>
+    <div class="swiper-slide"><img src="https://media.discordapp.net/attachments/905435171224965120/1123570849853739069/D47459C4-DF4D-408B-AC06-1AE8F6339FBD.jpg"></div>
+    <div class="swiper-slide">
+      <img src="https://media.discordapp.net/attachments/1124312669504147626/1124572977703436328/IMG_1206.jpg">
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons 
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>-->
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+    
+    <div class="portfolio">
+      <h1>
+        Portfolio
+      </h1>
+    
+      <div class="portfolio-box" onclick="webhooksender();">
+      <img src="https://media.discordapp.net/attachments/905435171224965120/1169516568967913532/New_Project_15.png?ex=6555b02e&is=65433b2e&hm=b9f0ab0230f4ec5f487ff9a97c8d711e4c721507781fa5eb908abede2aaf690a&">
+      
+    </div> 
+      <span >Webhook Sender</span>
+</div>
+    <script >
+function webhooksender(){
+window.location.href = "https://webhook.shahal.online";
+}
+</script>
+         <h1>
+          Connect with Me
+        </h1>   
+    <div class="contact-me">
+      <form action="contact.php" method="POST">
+        <div class="input-form">
+        <label for="name">Name </label><br>
+        <input type="text" id="name" name="name">
+        </div>
+        <div class="input-form">
+        <label for="email">Email </label><br>
+        <input type="email" id="email" name="email">
+        </div>
+        <div class="input-form">
+        <label for="message">Message </label><br>
+        <input type="text" id="message" name="message">
+        </div>
+        <div class="input-form">
+          <button>
+            submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>

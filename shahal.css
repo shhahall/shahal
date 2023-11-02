@@ -1,0 +1,101 @@
+
+body {
+  height:100%;
+
+box-sizing:border-box;
+     background-image:radial-gradient(circle,#282828,#000000);
+background-repeat:no-repeat;   
+        font-family:'Source Code Pro';
+        color:white;
+} 
+.heading{
+border-bottom:1px solid white;
+padding-bottom:10px;
+}
+      h1{
+
+font-size:13px;
+
+}
+
+.social-logo{
+direction:
+}
+.social-logo > a > img{
+padding:5px;
+height:15px;
+width:15px;
+}
+
+.intro-text{
+font-size:12px;
+box-sizing:content-box;
+
+padding-bottom:20px;
+margin:20px 10px;
+display:inline-block;
+
+}
+.swiper{
+display:grid;
+
+  place-items:center;
+}
+.swiper img{
+  height:300px;
+  width:300px;
+  display:flex;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:10px;
+}
+.portfolio{
+padding:15px;
+
+height:inherit;
+display:inline-block;
+}
+      .portfolio-box{
+border:1px solid white;
+      
+        border-radius:20px;
+        margin:0;
+          padding:0;
+}
+      .portfolio-box > img{
+width:60px;
+        height:100px;
+        
+        display:block;
+        padding:10px;
+        border-radius:20px;
+        
+        
+}
+.portfolio > span{
+font-size:10px;
+text-align:center;
+} 
+
+.contact-me {
+display:block;
+padding:20px;
+}
+
+.input-form{
+margin-bottom:10px;
+}
+
+.input-form > input{
+border:1px solid white;
+border-radius:10px;
+background:none;
+color:white;
+caret-color:white;
+}
+.input-form > button{
+background:none;
+border:1px solid white;
+color:white;
+border-radius:10px;
+}
